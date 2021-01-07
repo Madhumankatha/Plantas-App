@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="16dp"
+    android:paddingRight="16dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_rectangle">
+
+    <ImageView
+        android:id="@+id/imdOrderHead"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/rose_plant_1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvOrderTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/h2"
+        tools:text="Rose Any Plant "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imdOrderHead"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvOrderPrice"
+        style="@style/h2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/red_price"
+        app:layout_constraintStart_toEndOf="@+id/imdOrderHead"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderTitle"
+        tools:text=" 289" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvOrderQty"
+        style="@style/h5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imdOrderHead"
+        tools:text="Qty: x5" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvOrderStatus"
+        style="@style/h5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#32a852"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Ordered" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

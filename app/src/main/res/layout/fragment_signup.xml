@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/bg_login"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE NEW ACCOUNT"
+        style="@style/h1"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Edittext"
+        android:hint="Enter E-Mail / Username"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="12dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Edittext"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Edittext"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="12dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Edittext"
+        android:hint="Enter Phone"
+        android:inputType="phone"
+        android:layout_marginTop="12dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Edittext"
+        android:hint="Enter Your Address"
+        android:inputType="textPostalAddress"
+        android:layout_marginTop="12dp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already Having Account? Login"
+        style="@style/h2"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/button"
+        android:text="CREATE ACCOUNT"
+        android:background="@drawable/top_corners"
+        android:layout_marginTop="8dp"
+        />
+
+</LinearLayout>
